@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="volume player-icon"></button>
+      </div>
+      <div class="play-timer">
+        <div class="song-time">00:00</div>
+        <div class="song-duration">00:00</div>
+      </div>
+      <input type="range" class="play-progress">
+      <ul class="play-list">
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <div class="icon-temperature">
+        <div class="temperature"></div>
+        <div>
+          <i class="weather-icon owf"></i>
+        </div>
+      </div>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder = "[Enter name]">
+    </div>
+  </main>
+  <footer class="footer">
+      <div class="footer-items">
+        <div class="footer-item set-icon">
+          <button class="settings-icon player-icon"></button>
+        </div>
+        <div class="footer-item quotes">
+          <button class="change-quote"></button>
+          <div class="quote"></div>
+          <div class="author"></div>
+        </div>
+        <div class="footer-item todo-list">
+          <p class="todo-button">Todo</p>
+        </div>
+      </div>
+  </footer>
+  <div class="todo">
+    <div class="todo-header">
+      <div class="todo-input">
+        <input class="todo-text" type="text" placeholder="NEW TODO">
+        <span class="todo-add"></span>
+      </div>
+      <div class="todo-options">Inbox</div>
+    </div>
+    <ul class="todo-items"></ul>
+  </div>
+  <div class="setting-list">
+    <div class="popup-settings">
+      <p class="popup-title">Settings</p>
+      <div class="popup-wrapper">
+        <div class="setting">
+          <p class="change-language">Select app language:</p><p class="change-setting language">English</p>
+        </div>
+        <div class="setting">
+          <p class="change-img">Select images source:</p><p class="change-setting image">GitHub</p>
+        </div>
+        <div class="setting">
+          <p class="name-setting">Time:</p><p class="change-setting show">Show</p>
+        </div>
+        <div class="setting">
+          <p class="name-setting">Date:</p><p class="change-setting show">Show</p>
+        </div>
+        <div class="setting">
+          <p class="name-setting">Greeting:</p><p class="change-setting show">Show</p>
+        </div>
+        <div class="setting">
+          <p class="name-setting">Quote:</p><p class="change-setting show">Show</p>
+        </div>
+        <div class="setting">
+          <p class="name-setting">Weather:</p><p class="change-setting show">Show</p>
+        </div>
+        <div class="setting">
+          <p class="name-setting">Player:</p><p class="change-setting show">Show</p>
+        </div>
+      </div>
+    </div>
+    <div class="popup-overlay"></div>
+  </div>
+  <script type = "module" src="js/script.js"></script>
+</body>
+</html>
